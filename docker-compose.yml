@@ -11,8 +11,7 @@ services:
 #    ports:
 #      - 80:80
 #      - 443:443
-    network_mode:
-      - host
+    network_mode: "host"
     volumes:
       - nginx_secrets:/etc/letsencrypt
       - ./user_conf.d:/etc/nginx/user_conf.d
